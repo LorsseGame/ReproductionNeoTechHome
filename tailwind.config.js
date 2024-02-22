@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "selector",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,10 +8,18 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        greenScreen: "#00E599",
+        greenHover: "#1AFFB2",
+        darkScreen: "#1A1A1A",
+        grayLight: "#E3E3E3",
+      },
+      borderWidth: {
+        1: "1px",
+      },
+      spacing: {
+        100: "30rem",
+        128: "32rem",
       },
     },
   },
